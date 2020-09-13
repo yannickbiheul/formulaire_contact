@@ -30,7 +30,7 @@
             <!-- PRENOM / NOM -->
             <div class="form2">
                 <p>
-                    <label for="prenom">Prénom</label>
+                    <label for="prenom">Prénom <span class="requis">*</span></label>
                     <input type="text" name="prenom" id="prenom" required>
                     <span id="aidePrenom"></span>
                 </p>
@@ -44,7 +44,7 @@
             <!-- MAIL / TEL -->
             <div class="form3">
                 <p>
-                    <label for="email">E-Mail</label>
+                    <label for="email">E-Mail <span class="requis">*</span></label>
                     <input type="email" name="email" id="email" required>
                     <span id="aideEmail"></span>
                 </p>
@@ -58,8 +58,9 @@
             <!-- MESSAGE -->
             <div class="form4">
                 <p>
-                    <label for="message">Message</label>
-                    <textarea id="message"></textarea>
+                    <label for="message">Message <span class="requis">*</span></label>
+                    <textarea id="message" required></textarea>
+                    <span id="aideMessage"></span>
                 </p>
             </div>
 
@@ -67,6 +68,9 @@
             <div class="form5">
                 <p>
                     <input type="submit" value="Valider">
+                    <div class="eltRequis">
+                        <p><span class="requis">*</span> : Requis.</p>
+                    </div>
                 </p>
             </div>
             

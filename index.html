@@ -15,7 +15,10 @@
 
 <body>
     <form>
+
+        <!-- TITRE -->
         <h1>Inscription</h1>
+
         <!-- PSEUDO -->
         <p>
             <label for="pseudo">Pseudo</label>
@@ -23,6 +26,52 @@
             <span id="aidePseudo"></span>
         </p>
 
+        <!-- MOT DE PASSE -->
+        <p>
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mdp" id="mdp" required>
+            <span id="aideMdp"></span>
+        </p>
+
+        <!-- MAIL -->
+        <p>
+            <label for="courriel">Mail</label>
+            <input type="email" name="mail" id="mail" required placeholder="utilisateur@domaine.fr">
+            <span id="aideMail"></span>
+        </p>
+
+        <!-- MAIL DE CONFIRMATION -->
+        <p>
+            <label for="confirmation">M'envoyer un mail de confirmation</label>
+            <input type="checkbox" name="confirmation" id="confirmation">
+        </p>
+
+        <!-- ABONNEMENT NEWSLETTER ET PROMOTIONS -->
+        <p>
+            <label for="abonewspromo">M'abonner à la newsletter et aux promotions</label>
+            <input type="radio" name="abonnement" id="abonewspromo" value="abonewspromo">
+            <br>
+            <label for="abonews">M'abonner uniquement à la newsletter</label>
+            <input type="radio" name="abonnement" id="abonews" value="abonews">
+            <br>
+            <label for="aborien">Ne pas m'abonner</label>
+            <input type="radio" name="abonnement" id="aborien" value="aborien">
+        </p>
+
+        <!-- NATIONALITE -->
+        <p>
+            <label for="nationalite">Nationalité</label>
+            <select name="nationalite" id="nationalite">
+                <option value="FR" selected>Française</option>
+                <option value="BE">Belge</option>
+                <option value="SUI">Suisse</option>
+                <option value="XX">Autre</option>
+            </select>
+        </p>
+
+        <!-- VALIDER / ANNULER-->
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
     </form>
 </body>
 </html>

@@ -20,6 +20,8 @@ let caseMessage = document.getElementById('message');
 let aideMessage = document.getElementById('aideMessage');
 let userMessage = "";
 
+let regexEmail = /.+@.+\..+/;
+
 
 // VERIFICATION PRENOM
 casePrenom.addEventListener('blur', function(e) {
@@ -32,4 +34,16 @@ casePrenom.addEventListener('blur', function(e) {
         aidePrenom.textContent = "Prénom correct !";
     }
     console.log(userPrenom);
+})
+
+// VERIFICATION EMAIL
+caseEmail.addEventListener('blur', function(e) {
+    userEmail = e.target.value;
+    if (!regexEmail.test(userEmail)) {
+        aideEmail.style.color = "#EA2027"
+        aideEmail.textContent = "Email incorrect !";
+    } else {
+        aideEmail.style.color = "#009432"
+        aideEmail.textContent = "Email correct !";
+    }
 })

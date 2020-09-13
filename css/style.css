@@ -21,13 +21,79 @@ form {
     height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-form>p {
+.form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid #000; */
+}
+
+.form2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid #000; */
+}
+.form2>p {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+.form3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid #000; */
+}
+.form3>p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+.form4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid #000; */
+}
+.form4>p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+.form5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid #000; */
+}
+.form5>input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px;
 }

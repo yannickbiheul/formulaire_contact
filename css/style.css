@@ -7,6 +7,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    --red: #EA2027;
+    --blue: #0652DD;
 }
 
 header {
@@ -62,6 +64,25 @@ form {
     align-items: flex-start;
     margin: 0 40px 0 40px;
 }
+.form2>p>input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    box-shadow: 2px 2px 4px #ccc;
+}
+#aidePrenom {
+    height: 20px;
+    width: 150px;
+    /* border: 1px solid #000; */
+    margin-top: 5px;
+}
+#aideNom {
+    height: 20px;
+    width: 150px;
+    /* border: 1px solid #000; */
+    margin-top: 5px;
+}
 
 .form3 {
     width: 100%;
@@ -77,6 +98,25 @@ form {
     justify-content: center;
     align-items: flex-start;
     margin: 0 40px 0 40px;
+}
+.form3>p>input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    box-shadow: 2px 2px 4px #ccc;
+}
+#aideEmail {
+    height: 20px;
+    width: 150px;
+    /* border: 1px solid #000; */
+    margin-top: 5px;
+}
+#aideTel {
+    height: 20px;
+    width: 150px;
+    /* border: 1px solid #000; */
+    margin-top: 5px;
 }
 
 .form4 {
@@ -105,6 +145,23 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.form5>p>input {
+    background-color: var(--blue);
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    cursor: pointer;
+}
+.form5>p>input:hover {
+    width: 152px;
+    height: 52px;
+}
+.form5>p>input:active {
+    
 }
 
 @media screen and (max-width: 1200px) {
